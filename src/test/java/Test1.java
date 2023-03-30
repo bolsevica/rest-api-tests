@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 public class Test1 {
     @BeforeAll
     public static void setup() {
-        RestAssured.baseURI = "http://localhost:8083";
+        RestAssured.baseURI = "http://localhost:8081";
     }
     @Test
     public void test1(){
