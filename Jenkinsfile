@@ -22,19 +22,9 @@ steps {
   }
 }
 }
-stage('Building Docker image') {
-steps{
-script {
-   if(testPassed){
-dockerImage = docker.build registry + ":$BUILD_NUMBER"
-}
-}
-}
-}
-}
 post {
         always {
-            junit 'build/reports/**/*.xml'
+            junit 'reports/**/*.xml'
         }
     }
 }
