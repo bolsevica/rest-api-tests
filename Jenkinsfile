@@ -25,7 +25,7 @@ steps {
 }
 post {
         always {
-            junit 'reports/**/*.html'
+            junit 'build/reports/tests/test/index.html'
         }
     }
 }
