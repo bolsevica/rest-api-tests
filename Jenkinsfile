@@ -36,8 +36,6 @@ post {
             ]
         }
       }
-    }
-  }
   post {
     always {
       echo "Send notifications for result: ${currentBuild.result}"
