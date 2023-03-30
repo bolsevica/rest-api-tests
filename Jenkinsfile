@@ -35,10 +35,8 @@ post {
               reportName: 'RCov Report'
             ]
         }
+        always {
+              echo "Send notifications for result: ${currentBuild.result}"
+            }
       }
-  post {
-    always {
-      echo "Send notifications for result: ${currentBuild.result}"
-    }
-  }
 }
