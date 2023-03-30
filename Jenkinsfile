@@ -30,7 +30,7 @@ post {
               allowMissing: false,
               alwaysLinkToLastBuild: false,
               keepAll: true,
-              reportDir: 'reports/tests/test/',
+              reportDir: 'reports/tests/test',
               reportFiles: 'index.html',
               reportName: 'RCov Report'
             ]
