@@ -25,7 +25,7 @@ steps {
 }
 post {
         always {
-            junit 'reports/**/*.xml'
+            junit 'reports/**/*.html'
         }
     }
 }
